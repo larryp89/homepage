@@ -1,0 +1,94 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* HEADER SECTIOn */
+
+.diagonal-background {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.diagonal-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1892b4;
+  transform: skewY(-8deg);
+  transform-origin: top left;
+  z-index: -1;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 25rem;
+  height: auto;
+  padding: 2rem 0rem 0rem 3rem;
+}
+
+main {
+  background-color: white;
+}
+
+header section {
+  background-color: white;
+  max-width: 30rem;
+  transform: translateY(30%);
+  padding: 2rem;
+  box-shadow: 20px 20px 1px rgba(255, 255, 255, 0.5);
+  min-height: 15rem;
+}
+
+h1{
+    color: white;
+    transform: translateY(-100%);
+    font-weight: 500;
+}
