@@ -13,6 +13,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Playfair Display", "Roboto";
 }
 
 img,
@@ -47,6 +48,7 @@ h6 {
   position: relative;
   overflow: hidden;
   display: flex;
+  justify-content: center;
 }
 
 .diagonal-background::before {
@@ -66,16 +68,13 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 img {
-  max-width: 25rem;
+  max-width: 30rem;
   height: auto;
   padding: 2rem 0rem 0rem 3rem;
-}
-
-main {
-  background-color: white;
 }
 
 header section {
@@ -83,12 +82,111 @@ header section {
   max-width: 30rem;
   transform: translateY(30%);
   padding: 2rem;
-  box-shadow: 20px 20px 1px rgba(255, 255, 255, 0.5);
-  min-height: 15rem;
+  box-shadow: 1px 1px 10px rgba(151, 145, 145, 0.5);
 }
 
-h1{
-    color: white;
-    transform: translateY(-100%);
-    font-weight: 500;
+h1 {
+  color: white;
+  transform: translateY(-100%);
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+  padding-left: 3rem;
 }
+
+h2 {
+  padding-bottom: 0.5rem;
+  color: black;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+i {
+  margin: 2rem 0rem 0rem 0rem;
+  font-size: 1.5rem;
+}
+
+/* MAIN */
+main {
+  background-color: white;
+  padding: 2rem 20rem 2rem 20rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.screenshot {
+  min-width: 15rem;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.screenshot h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 5rem 1rem;
+}
+
+.details i {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.proj-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article {
+  box-shadow: 1px 1px 10px rgba(151, 145, 145, 0.5);
+}
+
+article img {
+  background-color: red;
+}
+
+.first {
+  background-color: darkred;
+}
+
+.second {
+  background-color: rgb(157, 103, 233);
+}
+
+.third {
+  background-color: rgb(63, 120, 63);
+}
+
+.fourth {
+  background-color: rgb(174, 98, 174);
+}
+
+.fifth {
+  background-color: rgb(200, 138, 23);
+}
+
+.sixth {
+  background-color: rgb(42, 135, 169);
+}
+
+/* FOOTER */
