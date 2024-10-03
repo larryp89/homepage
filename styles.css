@@ -258,8 +258,18 @@ article {
   .container {
     background-color: white;
     padding-right: 2rem;
+    box-shadow: 1px 1px 10px grey;
   }
 
+  .container h2 {
+    margin-top: 6rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+  .container p {
+    padding-bottom: 2rem;
+  }
   .image {
     float: left;
     transform: translateX(-2rem);
@@ -268,15 +278,7 @@ article {
   .icons {
     display: none;
   }
-  .container {
-    box-shadow: 1px 1px 1px grey;
-  }
 
-  .container h2 {
-    margin-top: 6rem;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-  }
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -300,10 +302,6 @@ article {
 
 /* DESKTOP */
 @media (min-width: 980px) {
-  header {
-    padding: 0 4rem;
-  }
-
   img {
     height: 450px;
     width: auto;
@@ -311,6 +309,7 @@ article {
   .icons {
     display: flex;
     gap: 1rem;
+    justify-content: flex-end;
   }
 
   .image h1 {
