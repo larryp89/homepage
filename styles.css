@@ -130,12 +130,17 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-
-article {
   padding: 2rem;
 }
 
+main h2 {
+  text-align: left;
+  font-size: 2rem;
+}
+
+article {
+  margin-bottom: 5rem;
+}
 .placeholder {
   display: flex;
   min-height: 15rem;
